@@ -415,13 +415,13 @@ body::after {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    color: transparent;
+    /* color: transparent; */
     font-family: 'Playfair Display', serif;
     will-change: transform;
     transition: transform 0.1s linear;
-     color:red !important;
+     /* color:red !important;
     -webkit-text-fill-color:red !important;
-    background:none !important;
+    background:none !important; */
 }
 
 /* ---------- BENEFITS ---------- */
