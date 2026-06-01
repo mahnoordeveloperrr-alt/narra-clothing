@@ -409,13 +409,13 @@ body::after {
     letter-spacing: -25px;
     text-transform: uppercase;
     text-align: center;
-    /* background-image: url("public/img/12345.webp"); */
+    background-image: url("/narra-clothing/img/12345.webp");
     background-size: cover;
     background-position: center;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    /* color: transparent; */
+    color: transparent;
     font-family: 'Playfair Display', serif;
     will-change: transform;
     transition: transform 0.1s linear;
