@@ -6,6 +6,7 @@ import './App.css';
 // Ensure these images exist in public/img/
 // ──────────────────────────────────────
 const IMAGES = {
+  heroTexture: 'img/12345.webp',
   heritagePreview: 'img/44.webp',
   lookbook1: 'img/77.jpg',
   lookbook2: 'img/55.webp',
@@ -138,13 +139,11 @@ export default function App() {
       const moveX = ((x - centerX) / centerX) * 15;
       const moveY = ((y - centerY) / centerY) * 10;
 
-      artText.style.transform = `translate(${moveX * 0.5}px, ${
-        moveY * 0.3
-      }px) scale(1.02)`;
+      artText.style.transform = `translate(${moveX * 0.5}px, ${moveY * 0.3
+        }px) scale(1.02)`;
       if (content) {
-        content.style.transform = `translate(${moveX * 0.2}px, ${
-          moveY * 0.2
-        }px)`;
+        content.style.transform = `translate(${moveX * 0.2}px, ${moveY * 0.2
+          }px)`;
       }
     };
 
@@ -316,9 +315,8 @@ export default function App() {
               Login
             </button>
             <button
-              className={`modal-tab ${
-                activeTab === 'register' ? 'active' : ''
-              }`}
+              className={`modal-tab ${activeTab === 'register' ? 'active' : ''
+                }`}
               onClick={() => setActiveTab('register')}
             >
               Register
@@ -341,9 +339,8 @@ export default function App() {
           </form>
 
           <form
-            className={`modal-form ${
-              activeTab === 'register' ? 'active' : ''
-            }`}
+            className={`modal-form ${activeTab === 'register' ? 'active' : ''
+              }`}
             onSubmit={handleRegisterSubmit}
           >
             <input type="text" placeholder="Full Name" required />
@@ -383,7 +380,9 @@ export default function App() {
           </div>
         </div>
         <div className="art-wrapper">
-          <div className="art-text" ref={artTextRef}>
+          <div className="art-text" ref={artTextRef} style={{
+            backgroundImage: `url(${IMAGES.heroTexture})`
+          }}>
             LUXE
           </div>
         </div>
@@ -527,9 +526,8 @@ export default function App() {
             {PROCESS_STEPS.map((step, index) => (
               <div
                 key={step.number}
-                className={`process-item${
-                  activeProcessIndex === index ? ' active' : ''
-                }${hoveredProcessIndex === index ? ' hovered' : ''}`}
+                className={`process-item${activeProcessIndex === index ? ' active' : ''
+                  }${hoveredProcessIndex === index ? ' hovered' : ''}`}
                 onClick={() => setActiveProcessIndex(index)}
                 onMouseEnter={() => setHoveredProcessIndex(index)}
                 onMouseLeave={() => setHoveredProcessIndex(null)}
