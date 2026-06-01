@@ -381,13 +381,8 @@ export default function App() {
           </div>
         </div>
         <div className="art-wrapper">
-<<<<<<< HEAD
-          <div className="art-text" ref={artTextRef} style={{
-            backgroundImage: `url(${IMAGES.heroTexture})`
-          }}>
-=======
           <div className="art-text" ref={artTextRef} style={{backgroundImage: `url(${IMAGES.heroTexture})`}}>
->>>>>>> 89f7b06dde93e3bfc072de32d84ebd83142b237a
+
             LUXE
           </div>
         </div>
