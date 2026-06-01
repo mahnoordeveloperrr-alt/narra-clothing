@@ -409,7 +409,7 @@ body::after {
     letter-spacing: -25px;
     text-transform: uppercase;
     text-align: center;
-    background-image: url("/narra-clothing/img/12345.webp");
+    background-image: url("narra-clothing/img/12345.webp");
     background-size: cover;
     background-position: center;
     -webkit-background-clip: text;
