@@ -6,6 +6,7 @@ import './App.css';
 // Ensure these images exist in public/img/
 // ──────────────────────────────────────
 const IMAGES = {
+  heroTexture: 'img/12345.webp',
   heritagePreview: 'img/44.webp',
   lookbook1: 'img/77.jpg',
   lookbook2: 'img/55.webp',
@@ -383,7 +384,7 @@ export default function App() {
           </div>
         </div>
         <div className="art-wrapper">
-          <div className="art-text" ref={artTextRef}>
+          <div className="art-text" ref={artTextRef} style={{backgroundImage: `url(${IMAGES.heroTexture})`}}>
             LUXE
           </div>
         </div>
