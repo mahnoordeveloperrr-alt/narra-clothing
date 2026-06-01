@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from 'react';
+import heroTexture from './assets/12345.webp';
 import './App.css';
 
 // ──────────────────────────────────────
