@@ -409,7 +409,11 @@ body::after {
     letter-spacing: -25px;
     text-transform: uppercase;
     text-align: center;
+<<<<<<< HEAD
     /* background-image: url("img/12345.webp"); */
+=======
+    /* background-image: url("narra-clothing/public/img/12345.webp"); */
+>>>>>>> 89f7b06dde93e3bfc072de32d84ebd83142b237a
     background-size: cover;
     background-position: center;
     -webkit-background-clip: text;
@@ -419,6 +423,9 @@ body::after {
     font-family: 'Playfair Display', serif;
     will-change: transform;
     transition: transform 0.1s linear;
+     /* color:red !important;
+    -webkit-text-fill-color:red !important;
+    background:none !important; */
 }
 
 /* ---------- BENEFITS ---------- */
