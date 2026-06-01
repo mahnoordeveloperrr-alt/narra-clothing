@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://mahnoor123.github.io/studio-lumina",
+  "homepage": "https://mahnoor123.github.io/narra-clothing",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
